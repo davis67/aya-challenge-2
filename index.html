@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Icome Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="budget">
+            <div class="budget__title">
+                Automated Budget Calculator
+            </div>
+            <div class="income__list">
+
+            </div>
+
+            <div class="budget__expenses clearfix">
+                <div class="budget__expenses--text">Budget Categories</div>
+                <div class="right clearfix">
+                    <div class="budget__expenses--value">0</div>
+                    <div class="budget__expenses--percentage">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container category_overall hidden">
+                <h4>Add Budget Categories</h4>
+                <input type="text" class="form__control category__input" placeholder="Add Bugdet Category">
+                <input type="number" class="form__control value__input" placeholder="Value">
+                <button class="add__btn category__btn">Save</button>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="add biodata_container__overall">
+                <div class="add__container">
+                    <h4>Income Bio Data</h4>
+                    <div class="biodata__container">
+                        <input type="number" class="form__control income__input" placeholder="Income">
+                        <input type="number" class="form__control age__input" placeholder="Age">
+                        <select class="form__control gender__input">
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <select class="form__control malitalstatus__input">
+                            <option value="married" selected>Married</option>
+                            <option value="single">Single</option>
+                            <option value="widow">Widow</option>
+                            <option value="widower">Widower</option>
+                            <option value="Not sure">Not Sure</option>
+                        </select>
+                        <input type="number" class="form__control dependants__input" placeholder="Number of Dependants">
+                    </div>
+                    <button class="add__btn biodata__btn">Save</button>
+                </div>
+            </div>
+            <div style="display: flex ; justify-content:center;">
+            <div class="expenses hidden">
+                <h2 class="expenses__title">Budget Categories</h2>
+                <div class="expenses__list">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/app.js"></script>
+
+</html>
